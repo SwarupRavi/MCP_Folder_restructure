@@ -1,0 +1,15 @@
+[project]
+name = "folder-restructure-mcp"
+version = "0.1.0"
+description = "MCP server for analyzing file access times and identifying rarely used files"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=0.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+folder-restructure-mcp = "folder_restructure_mcp.server:main"
